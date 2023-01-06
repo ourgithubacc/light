@@ -41,8 +41,8 @@ async function  handleWebhook (req, res)  {
                 qrCode,
                 email:token.email
               }).save();
-              const body = `Purchase Successful. Your Ticket has been generated, go to "Ticket" in the profile section of the BUSA app`
-              sendEmail(email,body,"Payment Successful")
+              //const body = `Purchase Successful. Your Ticket has been generated, go to "Ticket" in the profile section of the BUSA app`
+              //sendEmail(email,body,"Payment Successful")
       } 
      
 
