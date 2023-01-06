@@ -24,12 +24,8 @@ async function  handleWebhook (req, res)  {
 
       const webHookEvent =  await new WebhookEvents({
         webhookEvent: event
-      }).save()
-
-      console.log(webHookEvent)
+      }).save()      
       
-      
-
       if(event.event === 'charge.success'){    
              const token = await new Token({
                 token: ((Math.random() + 1).toString(36).substring(7)).toUpperCase(),
