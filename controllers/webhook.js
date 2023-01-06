@@ -3,6 +3,7 @@ const WebhookEvents = require('../models/webhookEvents')
 const Token = require('../models/token')
 const Ticket = require('../models/tickets')
 const { sendEmail } = require('../helper/sendEmail')
+const qr = require('qrcode')
 
 const secret = "sk_test_833a73fab5a13cf8f7a2b7e8d3b2f65e6abfb84a"
 //const paystack = require('paystack-api')("sk_test_833a73fab5a13cf8f7a2b7e8d3b2f65e6abfb84a")
